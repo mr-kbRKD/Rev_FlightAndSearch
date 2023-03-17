@@ -21,7 +21,7 @@ class CityRepository{
             });
             return true;
         } catch (error) {
-            console.lof("Something went wrong in repository layer, createcity");
+            console.lof("Something went wrong in repository layer, deletecity");
             throw {error};
         }
     }
@@ -34,7 +34,7 @@ class CityRepository{
             });
             return city;
         } catch (error) {
-            console.lof("Something went wrong in repository layer, createcity");
+            console.lof("Something went wrong in repository layer, updatecity");
             throw {error};
         }
     }
@@ -43,7 +43,7 @@ class CityRepository{
             const city = await City.findbyPk(cityId);
             return city;
         } catch (error) {
-            console.lof("Something went wrong in repository layer, createcity");
+            console.lof("Something went wrong in repository layer, getcity");
             throw {error};
         }
     }
