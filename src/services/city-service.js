@@ -44,6 +44,16 @@ class CityService {
             throw { error}
         }
     }
+    async getAllCities(fliter){
+        try {
+            const cities = await this.cityRepository.getAllCities({name : fliter.name});
+            return cities;
+        } catch (error) {
+            console.log("Something went wrong at service layer getallCities");
+            throw { error}
+            
+        }
+    }
 }
 
 
